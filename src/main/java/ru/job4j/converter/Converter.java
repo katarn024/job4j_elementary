@@ -7,13 +7,13 @@ public class Converter {
     }
 
     public static float rubleToDollar(float value) {
-         return value / 35;
+         return value / 60;
     }
 
     public static void main(String[] args) {
         float input = 140;
         float expectedEuro = 2;
-        float expectedDollar = 4;
+        double expectedDollar = 2.3333333;
         float outputEuro = Converter.rubleToEuro(input);
         float outputDollar = Converter.rubleToDollar(input);
         boolean passedEuro = expectedEuro == outputEuro;
