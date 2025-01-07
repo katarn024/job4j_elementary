@@ -10,9 +10,12 @@ public class RectangArea {
     }
 
     public static void main(String[] args) {
-        double result = RectangArea.square(4, 1);
+        double result;
+        result = RectangArea.square(4, 1);
         System.out.println(result);
         result = RectangArea.square(6, 2);
+        System.out.println(result);
+        result = RectangArea.square(1, 9);
         System.out.println(result);
     }
 }
