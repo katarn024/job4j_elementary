@@ -4,7 +4,7 @@ public class SimpleStringEncoder {
 
     public static String encode(String input) {
         StringBuilder result = new StringBuilder();
-        char symbol = input.charAt(0);
+        char symbol;
         int counter = 1;
         for (int i = 0; i <= input.length() - 1; i++) {
             symbol = input.charAt(i);
