@@ -3,7 +3,7 @@ package ru.job4j.array;
 public class SimpleStringEncoder {
 
     public static String encode(String input) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         char symbol = input.charAt(0);
         int counter = 1;
         for (int i = 0; i <= input.length() - 1; i++) {
@@ -11,13 +11,13 @@ public class SimpleStringEncoder {
             if (input.length() - i > 1 && input.charAt(i) == input.charAt(i + 1)) {
                 counter++;
             } else if (counter >= 2) {
-                result += symbol;
-                result += counter;
+                result.append(symbol);
+                result.append(counter);
                 counter = 1;
             } else {
-                result += symbol;
+                result.append(symbol);
             }
         }
-        return result;
+        return result.toString();
     }
 }
