@@ -32,7 +32,7 @@ class TwoNumberSumTest {
         int[] expected = {1, 4};
         assertThat(result).isEqualTo(expected);
     }
-    
+
     @Test
     void whenWithoutNegativeNumbersYesTarget() {
         int[] array = {0, 2, 5, 8, 10, 12};
